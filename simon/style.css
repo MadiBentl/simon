@@ -1,0 +1,49 @@
+.quarter {
+  border: 2px solid #000;
+  /* the 'strokes' of the arc */
+  display: inline-block;
+  min-width: 4em;
+  /* the width of the innermost element */
+  min-height: 4em;
+  /* the height of the innermost element */
+  padding: 0.5em;
+  /* the spacing between each arc */
+  border-radius: 50%;
+  /* for making the elements 'round' */
+  border-top-color: transparent;
+  /* hiding the top border */
+  border-bottom-color: transparent; }
+
+#red {
+  width: 100px;
+  height: 100px;
+  background: #006699;
+  border-radius: 0 0 100px 0;
+  -moz-border-radius: 0 0 100px 0;
+  -webkit-border-radius: 0 0 100px 0; }
+
+#blue {
+  width: 100px;
+  height: 100px;
+  background: #117300;
+  border-radius: 0 0 0 100px;
+  -moz-border-radius: 0 0 0 100px;
+  -webkit-border-radius: 0 0 0 100px; }
+
+#green {
+  width: 100px;
+  height: 100px;
+  background: #006699;
+  border-radius: 0 100px 0 0;
+  -moz-border-radius: 0 100px 0 0;
+  -webkit-border-radius: 0 100px 0 0; }
+
+#yellow {
+  width: 100px;
+  height: 100px;
+  background: #117300;
+  border-radius: 100px 0 0 0;
+  -moz-border-radius: 100px 0 0 0;
+  -webkit-border-radius: 100px 0 0 0; }
+
+/*# sourceMappingURL=style.css.map */
