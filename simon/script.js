@@ -1,5 +1,9 @@
 
 var pattern = [];
+var init = function(){
+  generatePattern();
+  console.log(pattern);
+}
 var generatePattern = function(){
   pattern.push(addToPattern());
 }
@@ -20,5 +24,3 @@ var addToPattern = function(){
       break;
   }
 }
-generatePattern();
-console.log(pattern);
