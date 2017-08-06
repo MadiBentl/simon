@@ -5,7 +5,8 @@
   width: 550px;
   height: 550px;
   border-radius: 550px;
-  background: grey; }
+  background: grey;
+  display: flex; }
 
 #red {
   width: 250px;
@@ -29,7 +30,8 @@
   background: green;
   border-radius: 0 250px 0 0;
   -moz-border-radius: 0 250px 0 0;
-  -webkit-border-radius: 0 250px 0 0; }
+  -webkit-border-radius: 0 250px 0 0;
+  flex: 1; }
 
 #yellow {
   width: 250px;
@@ -37,6 +39,7 @@
   background: yellow;
   border-radius: 250px 0 0 0;
   -moz-border-radius: 250px 0 0 0;
-  -webkit-border-radius: 250px 0 0 0; }
+  -webkit-border-radius: 250px 0 0 0;
+  flex: 0 0 50%; }
 
 /*# sourceMappingURL=style.css.map */

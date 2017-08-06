@@ -6,6 +6,7 @@ border: black 6px solid;
   height: 550px;
   border-radius: 550px;
   background: grey;
+  display:flex;
 }
 #red{
   width: 250px;
@@ -30,6 +31,7 @@ border-radius: 0 0 250px 0;
     border-radius: 0 250px 0 0;
     -moz-border-radius: 0 250px 0 0;
     -webkit-border-radius: 0 250px 0 0;
+    flex: 1;
 }
 #yellow{
   width: 250px;
@@ -38,4 +40,5 @@ border-radius: 0 0 250px 0;
    border-radius: 250px 0 0 0;
    -moz-border-radius: 250px 0 0 0;
    -webkit-border-radius: 250px 0 0 0;
+   flex: 0 0 50%;
 }
