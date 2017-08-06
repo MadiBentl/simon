@@ -12,6 +12,12 @@ box-sizing: border-box;
   z-index: 10000;
   border: black 12px solid;
   top: 0; left: 0; bottom: 0; right: 0;
+  display:table;
+  #control-content{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+  }
 }
 #circle{
   width:500px;
