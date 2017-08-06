@@ -2,12 +2,31 @@
   border: black 6px solid;
   box-sizing: border-box; }
 
+#control {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  position: absolute;
+  margin: auto;
+  z-index: 10000;
+  border: black 6px solid;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
 #circle {
   width: 500px;
   height: 500px;
   border-radius: 500px;
   background: grey;
   border: black 3px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   margin: auto; }
 
 #top, #bottom {
