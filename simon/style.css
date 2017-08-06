@@ -1,11 +1,13 @@
 .quarter {
-  border: black 6px solid; }
+  border: black 6px solid;
+  box-sizing: border-box; }
 
 #circle {
-  width: 550px;
-  height: 550px;
-  border-radius: 550px;
-  background: grey; }
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+  background: grey;
+  border: black 3px solid; }
 
 #top, #bottom {
   display: flex; }
@@ -26,7 +28,7 @@
   border-radius: 0 0 0 250px;
   -moz-border-radius: 0 0 0 250px;
   -webkit-border-radius: 0 0 0 250px;
-  flex: 0 050%; }
+  flex: 0 0 50%; }
 
 #green {
   width: 250px;

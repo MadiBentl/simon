@@ -1,11 +1,13 @@
 .quarter{
 border: black 6px solid;
+box-sizing: border-box;
 }
 #circle{
-  width:550px;
-  height: 550px;
-  border-radius: 550px;
+  width:500px;
+  height: 500px;
+  border-radius: 500px;
   background: grey;
+  border: black 3px solid;
 }
 #top, #bottom{
     display:flex;
