@@ -1,6 +1,8 @@
 .quarter {
   border: black 6px solid;
   box-sizing: border-box; }
+  .quarter:hover {
+    background-color: orange !important; }
 
 #circle {
   width: 500px;
