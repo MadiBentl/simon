@@ -1,7 +1,7 @@
 
-var generatedPattern = [];
+var pattern = [];
 var generatePattern = function(){
-
+  pattern.push(addToPattern());
 }
 var addToPattern = function(){
   var randomQuadrant = Math.ceil(Math.random() * 4);
@@ -20,4 +20,5 @@ var addToPattern = function(){
       break;
   }
 }
-console.log(addToPattern() + " " + addToPattern() + " " + addToPattern() + " " + addToPattern() + " " + addToPattern());
+generatePattern();
+console.log(pattern);
