@@ -1,8 +1,6 @@
 .quarter {
   border: black 6px solid;
   box-sizing: border-box; }
-  .quarter:hover {
-    background-color: orange !important; }
 
 #circle {
   width: 500px;
@@ -23,6 +21,8 @@
   -moz-border-radius: 0 0 250px 0;
   -webkit-border-radius: 0 0 250px 0;
   flex: 1; }
+  #red:hover {
+    background-color: #cc0000; }
 
 #blue {
   width: 250px;
@@ -32,6 +32,8 @@
   -moz-border-radius: 0 0 0 250px;
   -webkit-border-radius: 0 0 0 250px;
   flex: 0 0 50%; }
+  #blue:hover {
+    background-color: #0000cc; }
 
 #green {
   width: 250px;
@@ -41,6 +43,8 @@
   -moz-border-radius: 0 250px 0 0;
   -webkit-border-radius: 0 250px 0 0;
   flex: 1; }
+  #green:hover {
+    background-color: #004d00; }
 
 #yellow {
   width: 250px;
@@ -50,5 +54,7 @@
   -moz-border-radius: 250px 0 0 0;
   -webkit-border-radius: 250px 0 0 0;
   flex: 0 0 50%; }
+  #yellow:hover {
+    background-color: #cccc00; }
 
 /*# sourceMappingURL=style.css.map */
