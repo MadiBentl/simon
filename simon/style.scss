@@ -7,12 +7,11 @@ box-sizing: border-box;
   width: 200px;
   height: 200px;
   border-radius: 200px;
-    position: absolute;
+  position: absolute;
   margin:auto;
   z-index: 10000;
-  border: black 6px solid;
+  border: black 12px solid;
   top: 0; left: 0; bottom: 0; right: 0;
-
 }
 #circle{
   width:500px;
@@ -20,8 +19,8 @@ box-sizing: border-box;
   border-radius: 500px;
   background: grey;
   border: black 3px solid;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
   margin: auto;
 
 }
