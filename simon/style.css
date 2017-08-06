@@ -5,7 +5,9 @@
   width: 550px;
   height: 550px;
   border-radius: 550px;
-  background: grey;
+  background: grey; }
+
+#top, #bottom {
   display: flex; }
 
 #red {
@@ -14,7 +16,8 @@
   background: red;
   border-radius: 0 0 250px 0;
   -moz-border-radius: 0 0 250px 0;
-  -webkit-border-radius: 0 0 250px 0; }
+  -webkit-border-radius: 0 0 250px 0;
+  flex: 1; }
 
 #blue {
   width: 250px;
@@ -22,7 +25,8 @@
   background: blue;
   border-radius: 0 0 0 250px;
   -moz-border-radius: 0 0 0 250px;
-  -webkit-border-radius: 0 0 0 250px; }
+  -webkit-border-radius: 0 0 0 250px;
+  flex: 0 050%; }
 
 #green {
   width: 250px;
