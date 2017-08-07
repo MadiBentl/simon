@@ -10,16 +10,15 @@ var displayPattern = function (arr){
   changeColour(arr, x);
 }
 var changeColour = function(arr, x){
-  $("#" + arr[x]).css("background-color", "black");
+  $("#" + arr[x]).addClass("blacken");
     setTimeout(function(){
-      $("#" + arr[x]).css("background-color", arr[x]);
+      $("#" + arr[x]).removeClass("blacken");
       console.log("done");
       x = x+1;
       if (x < arr.length){
         changeColour(arr, x);
       }
-    }, 600);
-
+    }, 1000);
 }
 var generatePattern = function(){
   pattern.push(addToPattern());
