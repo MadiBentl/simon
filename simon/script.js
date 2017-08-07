@@ -6,15 +6,20 @@ var init = function(){
   console.log(pattern);
 }
 var displayPattern = function (arr){
-  for (var x = 0; x < arr.length; x++){
-    changeColour(arr[x]);
-  }
+  var x = 0;
+  changeColour(arr, x);
 }
-var changeColour = function(colour){
-  $("#" + colour).css("background-color", "black");
-  window.setTimeout(function(){
-    $("#" + colour).css("background-color", colour);
-  }, 600);
+var changeColour = function(arr, x){
+  $("#" + arr[x]).css("background-color", "black");
+    setTimeout(function(){
+      $("#" + arr[x]).css("background-color", arr[x]);
+      console.log("done");
+      x = x+1;
+      if (x < arr.length){
+        changeColour(arr, x);
+      }
+    }, 600);
+
 }
 var generatePattern = function(){
   pattern.push(addToPattern());
