@@ -1,5 +1,9 @@
 * {
-  font-family: monospace; }
+  font-family: monospace;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .quarter {
   border: black 6px solid;
@@ -50,6 +54,8 @@
   flex: 1; }
   #red:hover {
     background-color: #cc0000 !important; }
+  #red:active {
+    background: black; }
 
 #blue {
   width: 250px;
@@ -61,6 +67,8 @@
   flex: 0 0 50%; }
   #blue:hover {
     background-color: #0000cc !important; }
+  #blue:active {
+    background: black; }
 
 #green {
   width: 250px;
@@ -72,6 +80,8 @@
   flex: 1; }
   #green:hover {
     background-color: #004d00 !important; }
+  #green:active {
+    background: black; }
 
 #yellow {
   width: 250px;
@@ -83,6 +93,8 @@
   flex: 0 0 50%; }
   #yellow:hover {
     background-color: #cccc00 !important; }
+  #yellow:active {
+    background: black; }
 
 .blacken {
   background: black !important; }

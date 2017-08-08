@@ -10,16 +10,24 @@ var displayPattern = function (arr){
   changeColour(arr, x);
 }
 var changeColour = function(arr, x){
-  $("#" + arr[x]).addClass("blacken");
-    setTimeout(function(){
+  $("#" + arr[x]).addClass("blacken", 1000);
+  $("#" + arr[x]).removeClass("blacken", 1000);
+    /*setTimeout(function(){
       $("#" + arr[x]).removeClass("blacken");
-      console.log("done");
       x = x+1;
       if (x < arr.length){
         changeColour(arr, x);
       }
     }, 1000);
+    /*$("#" + arr[x]).animate({
+        "background-color": "blue"
+    }, 1000)
+    .delay(3000)
+    .animate({
+        "background-color": "black"
+    }, 1000);*/
 }
+
 var generatePattern = function(){
   pattern.push(addToPattern());
 }

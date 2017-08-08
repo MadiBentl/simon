@@ -1,5 +1,9 @@
 *{
   font-family: monospace;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .quarter{
 border: black 6px solid;
@@ -43,6 +47,9 @@ background: red;
 &:hover{
   background-color: darken(red, 10%) !important;
 }
+&:active{
+  background:black;
+}
 border-radius: 0 0 250px 0;
 -moz-border-radius: 0 0 250px 0;
 -webkit-border-radius: 0 0 250px 0;
@@ -54,6 +61,9 @@ flex: 1;
     background: blue;
     &:hover{
       background-color: darken(blue, 10%) !important;
+    }
+    &:active{
+      background:black;
     }
     border-radius: 0 0 0 250px;
     -moz-border-radius: 0 0 0 250px;
@@ -67,6 +77,9 @@ flex: 1;
     &:hover{
       background-color: darken(green, 10%) !important;
     }
+    &:active{
+      background:black;
+    }
     border-radius: 0 250px 0 0;
     -moz-border-radius: 0 250px 0 0;
     -webkit-border-radius: 0 250px 0 0;
@@ -78,6 +91,9 @@ flex: 1;
    background: yellow;
    &:hover{
      background-color: darken(yellow, 10%) !important;
+   }
+   &:active{
+     background:black;
    }
    border-radius: 250px 0 0 0;
    -moz-border-radius: 250px 0 0 0;
