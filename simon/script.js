@@ -10,14 +10,14 @@ var displayPattern = function (arr){
   changeColour(arr, x);
 }
 var changeColour = function(arr, x){
-  var myId = setInterval(function(){ mycode() }, 1000);
+  var myId = setInterval(function(){ mycode() }, 2000);
   var mycode = function(){
     if (x >= arr.length){
       clearInterval(myId);
     }
     else{
       console.log(arr[x]);
-      $("#" + arr[x]).addClass("blacken", 500).delay(500).removeClass("blacken", 500);
+      $("#" + arr[x]).addClass("blacken", 1000).delay(1000).removeClass("blacken", 1000);
       x = x + 1;
       console.log(x);
     }
