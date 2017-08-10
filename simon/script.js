@@ -1,9 +1,31 @@
 
 var pattern = [];
+var patternGuess = [];
+var lost = false;
 var init = function(){
   generatePattern();
   displayPattern(pattern);
+  turn();
   console.log(pattern);
+}
+var turn = function(){
+  patternGuess = [];
+  $(document).ready(function(){
+    for (var x = 0; x < pattern.length; x++){
+      if (patternGuess.length < pattern.length){
+        $( ".quarter" ).click(function() {
+          var colour = $(this).attr('id');
+          patternGuess.push(colour);
+          console.log("pattern " + pattern + " turn: " + patternGuess );
+          //console.log(patternGuess);
+        });
+      }
+    }
+    if (patternGuess.length == pattern.length){
+      console.log("pattern " + pattern + " turn: " + patternGuess );
+  }
+    });
+    //return patternGuess;
 }
 var displayPattern = function (arr){
   var x = 0;
