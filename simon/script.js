@@ -10,7 +10,20 @@ var displayPattern = function (arr){
   changeColour(arr, x);
 }
 var changeColour = function(arr, x){
-  $("#" + arr[x]).addClass("blacken", 1000);
+  var myId = setInterval(function(){ mycode() }, 1000);
+  var mycode = function(){
+    if (x >= arr.length){
+      clearInterval(myId);
+    }
+    else{
+      console.log(arr[x]);
+      $("#" + arr[x]).addClass("blacken", 900);
+      //$("#" + arr[x]).removeClass("blacken", 1000);
+      x = x + 1;
+      console.log(x);
+    }
+  }
+  /*$("#" + arr[x]).addClass("blacken", 1000);
   setTimeout(function(){
   $("#" + arr[x]).removeClass("blacken");
     if (x < arr.length - 1){
@@ -20,8 +33,8 @@ var changeColour = function(arr, x){
   /*x = x+1;
       if (x < arr.length){
         changeColour(arr, x);
-      }*/
-    }, 1000 * (x + 1));
+      }
+    }, 1000 * (x + 1));*/
   }
 
 var generatePattern = function(){
