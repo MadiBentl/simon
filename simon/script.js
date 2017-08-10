@@ -17,8 +17,7 @@ var changeColour = function(arr, x){
     }
     else{
       console.log(arr[x]);
-      $("#" + arr[x]).addClass("blacken", 900);
-      //$("#" + arr[x]).removeClass("blacken", 1000);
+      $("#" + arr[x]).addClass("blacken", 500).delay(500).removeClass("blacken", 500);
       x = x + 1;
       console.log(x);
     }
