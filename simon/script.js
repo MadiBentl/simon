@@ -11,22 +11,18 @@ var displayPattern = function (arr){
 }
 var changeColour = function(arr, x){
   $("#" + arr[x]).addClass("blacken", 1000);
-  $("#" + arr[x]).removeClass("blacken", 1000);
-    /*setTimeout(function(){
-      $("#" + arr[x]).removeClass("blacken");
-      x = x+1;
+  setTimeout(function(){
+  $("#" + arr[x]).removeClass("blacken");
+    if (x < arr.length - 1){
+      x = x + 1;
+      changeColour(arr, x);
+  	}
+  /*x = x+1;
       if (x < arr.length){
         changeColour(arr, x);
-      }
-    }, 1000);
-    /*$("#" + arr[x]).animate({
-        "background-color": "blue"
-    }, 1000)
-    .delay(3000)
-    .animate({
-        "background-color": "black"
-    }, 1000);*/
-}
+      }*/
+    }, 1000 * (x + 1));
+  }
 
 var generatePattern = function(){
   pattern.push(addToPattern());
