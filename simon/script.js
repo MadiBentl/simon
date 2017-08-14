@@ -5,24 +5,16 @@ var lost = false;
 var init = function(){
   generatePattern();
   displayPattern(pattern);
-  turn();
+  patternGuess = [];
 }
-var turn = function(){
-      patternGuess = [];
-      $(document).ready(function(){
-        for (let x = 0; x < pattern.length; x++){
-          $( ".quarter" ).on("click", function() {
-            var colour = $(this).attr('id');
-            patternGuess[x] = $(this).attr('id');
-            console.log("current Pattern Guess: " + patternGuess + " " + evaluateArrs(pattern, patternGuess));
-          });
-        }
-      });
-}
-var addToPatternGuess(){
-  var colour = "#" + id;
+
+var addToPatternGuess = function(id){
+  var colour = id;
   patternGuess.push(colour);
   console.log(patternGuess + " colour: " + colour);
+  if (patternGuess.length == pattern.length){
+    console.log(evaluateArrs(patternGuess, pattern));
+  }
 }
 var evaluateArrs = function(arr1, arr2) {
   if (arr1.length != arr2.length){
