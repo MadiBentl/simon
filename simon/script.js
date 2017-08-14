@@ -8,16 +8,21 @@ var init = function(){
   turn();
 }
 var turn = function(){
-    (function(){
       patternGuess = [];
       $(document).ready(function(){
+        for (let x = 0; x < pattern.length; x++){
           $( ".quarter" ).on("click", function() {
             var colour = $(this).attr('id');
-            patternGuess.push( $(this).attr('id'));
+            patternGuess[x] = $(this).attr('id');
             console.log("current Pattern Guess: " + patternGuess + " " + evaluateArrs(pattern, patternGuess));
           });
-        });
-    })();
+        }
+      });
+}
+var addToPatternGuess(){
+  var colour = "#" + id;
+  patternGuess.push(colour);
+  console.log(patternGuess + " colour: " + colour);
 }
 var evaluateArrs = function(arr1, arr2) {
   if (arr1.length != arr2.length){
