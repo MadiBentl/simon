@@ -7,13 +7,19 @@ var init = function(){
   displayPattern(pattern);
   patternGuess = [];
 }
-
+var updateGame = function(){
+  generatePattern();
+  displayPattern(pattern);
+  patternGuess = [];
+}
 var addToPatternGuess = function(id){
   var colour = id;
   patternGuess.push(colour);
   console.log(patternGuess + " colour: " + colour);
   if (patternGuess.length == pattern.length){
-    console.log(evaluateArrs(patternGuess, pattern));
+    if(evaluateArrs(patternGuess, pattern) == true){
+      updateGame();
+    };
   }
 }
 var evaluateArrs = function(arr1, arr2) {
