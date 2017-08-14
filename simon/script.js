@@ -6,26 +6,31 @@ var init = function(){
   generatePattern();
   displayPattern(pattern);
   turn();
-  console.log(pattern);
 }
 var turn = function(){
-  patternGuess = [];
-  $(document).ready(function(){
-    for (var x = 0; x < pattern.length; x++){
-      if (patternGuess.length < pattern.length){
-        $( ".quarter" ).click(function() {
-          var colour = $(this).attr('id');
-          patternGuess.push(colour);
-          console.log("pattern " + pattern + " turn: " + patternGuess );
-          //console.log(patternGuess);
+    (function(){
+      patternGuess = [];
+      $(document).ready(function(){
+          $( ".quarter" ).on("click", function() {
+            var colour = $(this).attr('id');
+            patternGuess.push( $(this).attr('id'));
+            console.log("current Pattern Guess: " + patternGuess + " " + evaluateArrs(pattern, patternGuess));
+          });
         });
+    })();
+}
+var evaluateArrs = function(arr1, arr2) {
+  if (arr1.length != arr2.length){
+    return false;
+  }
+  else{
+    for (var x = 0; x < arr1.length; x++){
+      if (arr1[x] != arr2[x]){
+        return false;
       }
     }
-    if (patternGuess.length == pattern.length){
-      console.log("pattern " + pattern + " turn: " + patternGuess );
   }
-    });
-    //return patternGuess;
+  return true;
 }
 var displayPattern = function (arr){
   var x = 0;
