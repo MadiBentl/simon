@@ -12,6 +12,12 @@ var updateGame = function(){
   displayPattern(pattern);
   patternGuess = [];
 }
+var startGame = function(){
+  pattern = [];
+  patternGuess = [];
+  generatePattern();
+  displayPattern(pattern);
+}
 var addToPatternGuess = function(id){
   var colour = id;
   patternGuess.push(colour);
@@ -19,7 +25,11 @@ var addToPatternGuess = function(id){
   if (patternGuess.length == pattern.length){
     if(evaluateArrs(patternGuess, pattern) == true){
       updateGame();
-    };
+    }
+    else{
+      console.log("Sorry you lost");
+      startGame();
+    }
   }
 }
 var evaluateArrs = function(arr1, arr2) {
