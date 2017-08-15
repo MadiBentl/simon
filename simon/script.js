@@ -1,8 +1,10 @@
 
 var pattern = [];
 var patternGuess = [];
+var score = 0;
 var lost = false;
 var init = function(){
+  $("#counter").html("<h1>" + score + "<h1>");
   generatePattern();
   displayPattern(pattern);
   patternGuess = [];
@@ -13,6 +15,8 @@ var updateGame = function(){
   patternGuess = [];
 }
 var startGame = function(){
+  score = 0;
+  $("#counter").html("<h1>" + score + "<h1>");
   pattern = [];
   patternGuess = [];
   generatePattern();
@@ -25,6 +29,8 @@ var addToPatternGuess = function(id){
   if (patternGuess.length == pattern.length){
     if(evaluateArrs(patternGuess, pattern) == true){
       updateGame();
+      score += 1;
+      $("#counter").html("<h1>" + score + "<h1>");
     }
     else{
       console.log("Sorry you lost");
