@@ -5,6 +5,9 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
+body {
+  background-image: url(img/Melamine-wood-004.png); }
+
 .quarter {
   border: black 6px solid;
   box-sizing: border-box; }
