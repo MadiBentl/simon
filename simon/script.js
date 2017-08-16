@@ -3,6 +3,10 @@ var pattern = [];
 var patternGuess = [];
 var score = 0;
 var lost = false;
+
+var toggleSwitch = function(){
+  $("#toggle").toggleClass("on");
+}
 var init = function(){
   displayScore(score);
   generatePattern();

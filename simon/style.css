@@ -62,6 +62,9 @@ h5 {
     margin: 2px;
     background-color: blue; }
 
+.on {
+  float: right; }
+
 #circle {
   width: 500px;
   height: 500px;
