@@ -48,18 +48,17 @@ body{
 }
 h5{
   display:table-cell;
-  margin:5px;
 }
 #onoff{
-  width: 40px;
+  width: 50px;
   height: 20px;
   background-color: black;
   border-radius: 2px;
   display:table-cell;
-  margin:15px;
+  margin:35px;
   #toggle{
-    width:16px;
-    height:16px;
+    width:20px;
+    height:20px;
     margin:2px;
     background-color: blue;
   }
