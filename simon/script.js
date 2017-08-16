@@ -2,16 +2,26 @@
 var pattern = [];
 var patternGuess = [];
 var score = 0;
-var lost = false;
 
 var toggleSwitch = function(){
   $("#toggle").toggleClass("on");
+  if ($("#toggle").hasClass("on")){
+    displayScore(score);
+  }
+  else{
+    $("#counter").empty();
+    score = 0;
+    pattern = [];
+    patternGuess = [];
+  }
+
 }
 var init = function(){
-  displayScore(score);
-  generatePattern();
-  displayPattern(pattern);
-  patternGuess = [];
+  if ($("#toggle").hasClass("on")){
+    generatePattern();
+    displayPattern(pattern);
+    patternGuess = [];
+  }
 }
 var updateGame = function(){
   generatePattern();
