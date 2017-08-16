@@ -18,9 +18,17 @@ body{
   color: red;
   background-color: black;
   margin: 5px auto;
+  display:table-cell;
 }
-
-
+button{
+  display:table-cell;
+}
+#centralControl{
+  margin: 5px auto;
+  display:table;
+  text-align:center;
+  width:60%;
+}
 #control{
   background: white;
   width: 200px;
