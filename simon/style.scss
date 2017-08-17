@@ -20,7 +20,28 @@ body{
   margin: 5px auto;
   display:table-cell;
   h1{
-    margin: 5px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+    vertical-align: middle;
+  }
+}
+#strict{
+  display: table-cell;
+  text-align: center;
+  #strict-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: orange;
+    border: 2px solid black;
+  }
+  #strict-light{
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: yellow;
   }
 }
 button{
@@ -28,7 +49,6 @@ button{
   height: 40px;
   border-radius: 40px;
   background-color: red;
-  margin: 5px;
   border: 2px solid black;
   display:table-cell;
 }
@@ -36,7 +56,7 @@ button{
   margin: 5px auto;
   display:table;
   text-align:center;
-  width:70%;
+  width:80%;
   height: 40px;
 }
 #control{

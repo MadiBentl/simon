@@ -2,6 +2,17 @@
 var pattern = [];
 var patternGuess = [];
 var score = 0;
+var strictMode = true;
+
+var useStrict = function(){
+  if (strictMode == true){
+    $("#strict-light").css("background-color", "grey");
+    strictMode = false;
+  }else{
+    $("#strict-light").css("background-color", "yellow");
+    strictMode = true;
+  }
+}
 
 var toggleSwitch = function(){
   $("#toggle").toggleClass("on");
