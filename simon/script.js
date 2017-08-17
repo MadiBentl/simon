@@ -66,8 +66,14 @@ var addToPatternGuess = function(id){
       displayScore(score);
     }
     else{
-      console.log("Sorry you lost");
-      startGame();
+      if (strictMode == true){
+        console.log("Sorry you lost");
+        startGame();
+      }
+      else{
+        displayPattern(pattern);
+        patternGuess = [];
+      }
     }
   }
 }
