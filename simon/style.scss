@@ -121,7 +121,7 @@ h5{
 height: 250px;
 background: red;
 &:hover{
-  background-color: darken(red, 10%) !important;
+  background-color: darken(red, 10%);
 }
 &:active{
   background:black;
@@ -136,7 +136,7 @@ flex: 1;
     height: 250px;
     background: blue;
     &:hover{
-      background-color: darken(blue, 10%) !important;
+      background-color: darken(blue, 10%);
     }
     &:active{
       background:black;
@@ -151,7 +151,7 @@ flex: 1;
     height: 250px;
     background: green;
     &:hover{
-      background-color: darken(green, 10%) !important;
+      background-color: darken(green, 10%);
     }
     &:active{
       background:black;
@@ -166,7 +166,7 @@ flex: 1;
    height: 250px;
    background: yellow;
    &:hover{
-     background-color: darken(yellow, 10%) !important;
+     background-color: darken(yellow, 10%);
    }
    &:active{
      background:black;

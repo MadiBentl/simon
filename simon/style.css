@@ -125,7 +125,7 @@ h5 {
   -webkit-border-radius: 0 0 250px 0;
   flex: 1; }
   #red:hover {
-    background-color: #cc0000 !important; }
+    background-color: #cc0000; }
   #red:active {
     background: black; }
 
@@ -138,7 +138,7 @@ h5 {
   -webkit-border-radius: 0 0 0 250px;
   flex: 0 0 50%; }
   #blue:hover {
-    background-color: #0000cc !important; }
+    background-color: #0000cc; }
   #blue:active {
     background: black; }
 
@@ -151,7 +151,7 @@ h5 {
   -webkit-border-radius: 0 250px 0 0;
   flex: 1; }
   #green:hover {
-    background-color: #004d00 !important; }
+    background-color: #004d00; }
   #green:active {
     background: black; }
 
@@ -164,7 +164,7 @@ h5 {
   -webkit-border-radius: 250px 0 0 0;
   flex: 0 0 50%; }
   #yellow:hover {
-    background-color: #cccc00 !important; }
+    background-color: #cccc00; }
   #yellow:active {
     background: black; }
 
