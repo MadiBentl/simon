@@ -7,11 +7,16 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+  color: white; }
 
 form {
   margin: 20px;
   padding-top: 20px; }
+
+#cell-info {
+  background-color: #92da49;
+  height: 20px; }
 
 #location-icon {
   width: 20px; }
@@ -19,7 +24,7 @@ form {
 #container, #top-info {
   width: 676px;
   margin: auto;
-  background-color: #add8e6; }
+  background-color: #92da49; }
 
 #top-info {
   height: 100px; }
@@ -39,6 +44,7 @@ li {
   display: inline;
   margin: 20px;
   padding: 10px;
-  border: 2px solid white; }
+  border: 2px solid white;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

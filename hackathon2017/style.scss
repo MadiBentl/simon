@@ -1,3 +1,6 @@
+$mediumGreen: #92da49;
+$highlightGreen: #b8e686;
+$textColour: white;
 *{
   box-sizing: border-box;
   font-size: 1.05em;
@@ -8,10 +11,15 @@ h1{
   justify-content: center;
   text-align: center;
   padding: 20px;
+  color: $textColour;
 }
 form{
   margin: 20px;
   padding-top: 20px;
+}
+#cell-info{
+  background-color: $mediumGreen;
+  height: 20px;
 }
 #location-icon{
   width: 20px;
@@ -19,7 +27,7 @@ form{
 #container, #top-info{
   width: 676px;
   margin: auto;
-  background-color: #add8e6;
+  background-color: $mediumGreen;
 }
 #top-info{
   height: 100px;
@@ -40,4 +48,5 @@ li{
   margin: 20px;
   padding: 10px;
   border: 2px solid white;
+  color: $textColour;
 }
