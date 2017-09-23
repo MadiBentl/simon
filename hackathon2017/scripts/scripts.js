@@ -2,7 +2,8 @@ console.log("successful");
 $(document).ready(function(){
   var dataLength = 3;
   $( "#target" ).submit(function( event ) {
-    displayOptions();
+    $("#container").load("addresses.html");
+    //displayOptions();
     event.preventDefault();
   });
   var displayOptions = function(){
