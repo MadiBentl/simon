@@ -1,12 +1,11 @@
 *{
-  color:orange;
-  border: 2px solid grey;
   box-sizing: border-box;
   font-size: 1.05em;
 }
-#container, body, #top-info{
+#container, #top-info{
   width: 676px;
   margin: auto;
+  background-color: #add8e6;
 }
 #top-info{
   height: 100px;

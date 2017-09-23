@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("#option" + x)
     .append("<h3>Moto</h3>")
     .append("<p>Price:" + x + "</p>")
-    .append("<a href='google.com'>book now</a>")
+    .append("<p>Time:" + x + " minutes</p>")
+    .append("<a href='google.com'>book now</a>");
   }
 });
