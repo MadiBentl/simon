@@ -13,6 +13,9 @@ form {
   margin: 20px;
   padding-top: 20px; }
 
+#location-icon {
+  width: 20px; }
+
 #container, #top-info {
   width: 676px;
   margin: auto;
