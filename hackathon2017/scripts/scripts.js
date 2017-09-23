@@ -6,6 +6,9 @@ $(document).ready(function(){
     //displayOptions();
     event.preventDefault();
   });
+  function enterAddress(){
+    $("#container").load("index.html");
+  }
   var displayOptions = function(){
     for (var x = 0; x < dataLength; x++){
       $("#options")
