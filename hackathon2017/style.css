@@ -1,0 +1,29 @@
+* {
+  color: orange;
+  border: 2px solid grey;
+  box-sizing: border-box; }
+
+#container, body, #top-info {
+  width: 676px;
+  margin: auto; }
+
+#top-info {
+  height: 100px; }
+
+#navbar {
+  width: 100%;
+  height: 50px; }
+
+#options {
+  width: 100%;
+  height: 900px; }
+
+ul {
+  height: 50px; }
+
+li {
+  display: inline;
+  margin: 20px;
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
