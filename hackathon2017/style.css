@@ -9,6 +9,10 @@ h1 {
   text-align: center;
   padding: 20px; }
 
+form {
+  margin: 20px;
+  padding-top: 20px; }
+
 #container, #top-info {
   width: 676px;
   margin: auto;
