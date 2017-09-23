@@ -10,6 +10,9 @@ $(document).ready(function(){
     $("#container").load("index.html");
   }
   var displayOptions = function(){
+    var filter = "Top Recommendations";
+    $("#container")
+    .append("<div class='activeFilter'>"+ filter +"</div>");
     for (var x = 0; x < dataLength; x++){
       $("#options")
       .append("<div class='option' id='option" + x + "'></div>");

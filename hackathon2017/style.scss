@@ -16,6 +16,16 @@ h1{
 form{
   margin: 20px;
   padding-top: 20px;
+  span input{
+    width: 80%;
+    float: right;
+    margin: auto;
+  }
+}
+.activeFilter{
+  height: 30px;
+  width: 100%;
+  background-color: $highlightGreen;
 }
 #cell-info{
   background-color: $mediumGreen;
@@ -27,10 +37,10 @@ form{
 #container, #top-info{
   width: 676px;
   margin: auto;
-  background-color: $mediumGreen;
 }
 #top-info{
-  height: 100px;
+  height: 120px;
+  background-color: $mediumGreen;
 }
 #navbar{
   width: 100%;

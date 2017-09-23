@@ -13,6 +13,15 @@ h1 {
 form {
   margin: 20px;
   padding-top: 20px; }
+  form span input {
+    width: 80%;
+    float: right;
+    margin: auto; }
+
+.activeFilter {
+  height: 30px;
+  width: 100%;
+  background-color: #b8e686; }
 
 #cell-info {
   background-color: #92da49;
@@ -23,11 +32,11 @@ form {
 
 #container, #top-info {
   width: 676px;
-  margin: auto;
-  background-color: #92da49; }
+  margin: auto; }
 
 #top-info {
-  height: 100px; }
+  height: 120px;
+  background-color: #92da49; }
 
 #navbar {
   width: 100%;
