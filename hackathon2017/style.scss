@@ -6,6 +6,7 @@ $buttonColour: #fc5608;
 *{
   box-sizing: border-box;
   font-size: 1.05em;
+  font-style: sans-serif;
 }
 button{
   border-radius: 0;
@@ -131,6 +132,7 @@ li{
   display:inline;
   padding: 5px;
   color: $textColour;
+  font-family: sans-serif;
 }
 .wrap{
   text-align: center;
