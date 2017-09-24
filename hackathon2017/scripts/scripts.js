@@ -3,18 +3,18 @@ $(document).ready(function(){
   var dataLength = 3;
   //displayFilter();
   $( "#target" ).submit(function( event ) {
+    displayOptions();
     $("#container").load("addresses.html");
-    //displayOptions();
     event.preventDefault();
   });
   function enterAddress(){
     $("#container").load("index.html");
   }
-  //var displayFilter = function(){
+//  var displayFilter = function(){
     var filter = "Top Recommendations";
     $("#navbar")
     .append("<div class='activeFilter'><p>"+ filter +"</p></div>");
-//  }
+  //}
   var displayOptions = function(){
     for (var x = 0; x < dataLength; x++){
       $("#options")

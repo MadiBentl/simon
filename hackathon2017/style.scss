@@ -17,18 +17,21 @@ h1{
 form{
   padding-top: 20px;
   span input{
-    width: 80%;
+    width: 450px;
     margin: auto;
+    margin-right:30px;
+    margin-top:5px;
     height: 40px;
   }
 }
 .activeFilter{
-  height: 30px;
+  height: 40px;
   width: 100%;
   background-color: $highlightGreen;
   color: $textGreen;
   p{
     margin:0px 0px 0px 10px;
+    padding: 7px;
   }
 }
 #cell-info{
