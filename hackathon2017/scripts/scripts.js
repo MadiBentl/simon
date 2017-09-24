@@ -12,7 +12,7 @@ $(document).ready(function(){
   }
   //var displayFilter = function(){
     var filter = "Top Recommendations";
-    $("#container")
+    $("#top-info")
     .append("<div class='activeFilter'>"+ filter +"</div>");
 //  }
   var displayOptions = function(){
