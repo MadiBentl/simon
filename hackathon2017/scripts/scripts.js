@@ -14,19 +14,22 @@ $(document).ready(function(){
     $("#address-options").removeClass("hidden");
       addressEntered = true;
   }
-
 });
 var displayOptions = function(){
     if (addressEntered){
       $("#content").removeClass("hidden");
+      $("#activeFilter").removeClass("hidden");
       $("#address-options").addClass("hidden");
       $("#car-options").removeClass("hidden");
       createOptions();
     }
 }
+var showmap = function(){
+  
+}
 var createOptions = function(){
   for (var x = 0; x< dataLength; x++){
-    $("#car-options").append("<div class='option' id='option" + x +"'>");
+    $("#car-options").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
     $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
                     .append("<div class='fltlft' id='fltleft" + x + "''></div>");
     $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 Moto > \uD83D\uDEB6</h3>")

@@ -19,12 +19,12 @@ form {
     margin-top: 5px;
     height: 40px; }
 
-.activeFilter {
+#activeFilter {
   height: 40px;
   width: 100%;
   background-color: #b8e686;
   color: #446a1d; }
-  .activeFilter p {
+  #activeFilter p {
     margin: 0px 0px 0px 10px;
     padding: 7px; }
 
