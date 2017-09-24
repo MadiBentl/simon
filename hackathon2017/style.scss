@@ -54,12 +54,18 @@ form{
   width: 676px;
   margin: auto;
 }
+input[type="text"]{
+  background-color: $highlightGreen;
+  border:none;
+  height: 50px;
+  margin-top: 15px;
+}
 #container{
   border: 3px solid grey;
   height: 1100px;
 }
 #top-info{
-  height: 120px;
+  height: 200px;
   background-color: $mediumGreen;
 }
 .icon{
@@ -69,6 +75,7 @@ form{
   width: 100%;
   height: 50px;
   background-color: $mediumGreen;
+  padding-bottom: 15px;
 }
 .hidden{
   display:none;
