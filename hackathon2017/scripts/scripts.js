@@ -34,14 +34,16 @@ var showmap = function(){
 }
 var createOptions = function(){
   for (var x = 0; x< dataLength; x++){
-    $("#car-options").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
-    $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
-                    .append("<div class='fltlft' id='fltleft" + x + "''></div>");
-    $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 " + data[x]["name"] + " > \uD83D\uDEB6</h3>")
-    .append("</br>")
-    .append(data[x]["badge"]);
-    $("#fltleft" + x).append("<h4>"+ data[x]["time"] +"</h4>")
-                     .append("<p>" + data[x]['cost'] + "</p>")
+    if (data[x]["available"]){
+      $("#car-options").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
+      $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
+                      .append("<div class='fltlft' id='fltleft" + x + "''></div>");
+      $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 " + data[x]["name"] + " > \uD83D\uDEB6</h3>")
+      .append("</br>")
+      .append(data[x]["badge"]);
+      $("#fltleft" + x).append("<h4>"+ data[x]["time"] +"</h4>")
+                       .append("<p>" + data[x]['cost'] + "</p>");
+    }
 
   }
 }
@@ -52,7 +54,7 @@ var data = [
     "type": "Car Sharing",
     "time": "26 min",
     "cost": "$6-10",
-    "available": "true",
+    "available": true,
     "badge": "Lowest Cost"
   },
   {
@@ -60,7 +62,7 @@ var data = [
     "typ": "Car Sharing",
     "time": "20 min",
     "cost": "$9-15",
-    "available": "true",
+    "available": true,
     "badge": "Shortest Walk"
   },
   {
@@ -68,7 +70,15 @@ var data = [
     "type": "Bike Sharing",
     "time": "35 min",
     "cost": "$9.75",
-    "available": "true",
+    "available": true,
     "badge": "Most Peaceful"
+  },
+  {
+    "name": "Car2Go",
+    "type": "Car Sharing",
+    "time": "30 min",
+    "cost": "$5-8",
+    "available": false,
+    "badge": null
   }
 ]
