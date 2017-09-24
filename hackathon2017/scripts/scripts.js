@@ -1,29 +1,29 @@
 console.log("successful");
 $(document).ready(function(){
+  var addressEntered = false;
   var dataLength = 3;
-  //displayFilter();
   $( "#target" ).submit(function( event ) {
-    displayOptions();
-    $("#container").load("addresses.html");
+    $("#content").css("display","none");
+    addressEntered = true;
+    confirmAddress();
     event.preventDefault();
   });
-  function enterAddress(){
-    $("#container").load("index.html");
+
+  var confirmAddress = function(){
+    $("#options").css("display","block");
   }
-//  var displayFilter = function(){
-    var filter = "Top Recommendations";
-    $("#navbar")
-    .append("<div class='activeFilter'><p>"+ filter +"</p></div>");
-  //}
   var displayOptions = function(){
-    for (var x = 0; x < dataLength; x++){
-      $("#options")
-      .append("<div class='option' id='option" + x + "'></div>");
-      $("#option" + x)
-      .append("<h3>Moto</h3>")
-      .append("<p>Price:" + x + "</p>")
-      .append("<p>Time:" + x + " minutes</p>")
-      .append("<a href='google.com'>book now</a>");
+    $("body").append("moto");
+    if (addressEntered){
+      for (var x = 0; x < dataLength; x++){
+        $("body")
+        .append("<div class='option' id='option" + x + "'></div>");
+        $("#option" + x)
+        .append("<h3>Moto</h3>")
+        .append("<p>Price:" + x + "</p>")
+        .append("<p>Time:" + x + " minutes</p>")
+        .append("<a href='google.com'>book now</a>");
+      }
     }
   }
 });
