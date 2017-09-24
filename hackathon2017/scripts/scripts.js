@@ -1,29 +1,25 @@
 console.log("successful");
+var addressEntered = false;
+var dataLength = 3;
+
 $(document).ready(function(){
-  var addressEntered = false;
-  var dataLength = 3;
   $( "#target" ).submit(function( event ) {
-    $("#content").css("display","none");
+    $("#content").addClass("hidden");
     addressEntered = true;
     confirmAddress();
     event.preventDefault();
   });
 
   var confirmAddress = function(){
-    $("#options").css("display","block");
+    $("#address-options").removeClass("hidden");
+      addressEntered = true;
   }
-  var displayOptions = function(){
-    $("body").append("moto");
-    if (addressEntered){
-      for (var x = 0; x < dataLength; x++){
-        $("body")
-        .append("<div class='option' id='option" + x + "'></div>");
-        $("#option" + x)
-        .append("<h3>Moto</h3>")
-        .append("<p>Price:" + x + "</p>")
-        .append("<p>Time:" + x + " minutes</p>")
-        .append("<a href='google.com'>book now</a>");
-      }
-    }
-  }
+
 });
+var displayOptions = function(){
+//  $(document).ready(function(){
+    if (addressEntered){
+      $("#car-options").removeClass("hidden");
+    }
+  //});
+}
