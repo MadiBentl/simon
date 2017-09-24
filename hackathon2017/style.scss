@@ -46,6 +46,11 @@ form{
     padding: 7px;
   }
 }
+#submit{
+  background-color: $highlightGreen;
+  border-radius: 200px;
+  padding: 20px 26px;
+}
 #cell-info{
   background-color: $mediumGreen;
   height: 30px;
