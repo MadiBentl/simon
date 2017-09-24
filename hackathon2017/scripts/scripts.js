@@ -18,6 +18,7 @@ $(document).ready(function(){
 });
 var displayOptions = function(){
     if (addressEntered){
+      $("#content").removeClass("hidden");
       $("#address-options").addClass("hidden");
       $("#car-options").removeClass("hidden");
       createOptions();
