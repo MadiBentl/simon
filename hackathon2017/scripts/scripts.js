@@ -45,3 +45,29 @@ var createOptions = function(){
 
   }
 }
+var data = {
+  "evo": {
+    "name": "Evo",
+    "type": "Car Sharing",
+    "time": "26 min;",
+    "cost": "$6-10",
+    "available": "true",
+    "badge": "Lowest Cost"
+  },
+  "Uber": {
+    "name": "Uber",
+    "typ": "Car Sharing",
+    "time": "20 min",
+    "cost": "$9-15",
+    "available": "true",
+    "badge": "Shortest Walk"
+  },
+  "Mobi": {
+    "name": "Mobi",
+    "type": "Bike Sharing",
+    "time": "35 min",
+    "cost": "$9.75",
+    "available": "true",
+    "badge": "Most Peaceful"
+  }
+}
