@@ -69,6 +69,7 @@ form{
   background-repeat: no-repeat;
   background-size:cover;
   height: 900px;
+  position:relative;
 }
 .option{
   border-bottom: grey 2px solid;
@@ -114,6 +115,9 @@ li{
 #book{
   background-color: white;
   height: 100px;
+  position:absolute;
+  bottom:0;
+  width:100%;
 }
 #bookbtn{
   padding: 15px;
