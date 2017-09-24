@@ -18,6 +18,7 @@ $(document).ready(function(){
 var displayOptions = function(){
     if (addressEntered){
       $("#options").removeClass("hidden");
+      $("#car-options").html("");
       $("carSharing").addClass("hidden");
       $("#content").removeClass("hidden");
       $("#activeFilter").removeClass("hidden");
