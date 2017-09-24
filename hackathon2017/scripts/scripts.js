@@ -25,7 +25,12 @@ var displayOptions = function(){
     }
 }
 var showmap = function(){
-  
+  console.log("show map");
+  $("#content").addClass("hidden");
+  $("#activeFilter").addClass("hidden");
+  $("#car-options").addClass("hidden");
+  $("#options").addClass("hidden");
+  $("#map-page").removeClass("hidden");
 }
 var createOptions = function(){
   for (var x = 0; x< dataLength; x++){
