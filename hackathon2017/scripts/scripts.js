@@ -42,7 +42,7 @@ var displayCarSharing = function(){
   $("#car-options").html("");
   $("#carSharing").removeClass("hidden");
   $("#options").html("");
-  for (var x = 0; x< dataLength; x++){
+  for (var x = 0; x< data.length; x++){
     if (data[x]["type"] == "Car Sharing"){
       $("#carSharing").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
       $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
@@ -60,7 +60,7 @@ var createOptions = function(){
   $("#options").html(" ");
   $("#carSharing").html("");
   $("#car-options").html("");
-  for (var x = 0; x< dataLength; x++){
+  for (var x = 0; x< data.length; x++){
     if (data[x]["available"]){
       $("#car-options").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
       $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
@@ -86,9 +86,17 @@ var data = [
   },
   {
     "name": "Uber",
-    "type": "Car Sharing",
+    "type": "Taxi Hailing",
     "time": "20 min",
     "cost": "$9-15",
+    "available": false,
+    "badge": null
+  },
+  {
+    "name": "Moto",
+    "type": "Car Sharing",
+    "time": "23 min",
+    "cost": "$12-15",
     "available": true,
     "badge": "Shortest Walk"
   },
