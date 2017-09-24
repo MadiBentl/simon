@@ -7,14 +7,23 @@
 <body>
   <div id="container">
     <div id = "cell-info">
+      <div class="wrap">
+        <div class="left">wifi</div>
+        <div class="right">
+            battery
+        </div>
+        <div class="center">
+            7:27PM
+        </div>
+    </div>
     </div>
     <div id="top-info">
         <form id = "target">
-          <span><input type="text" name="fromLocation"></span><br>
+          <span><input type="text" name="fromLocation" value="BCIT Downtown"></span><br>
           <img id="location-icon" src="./images/location-icon-blue.png"/>
-          <span><input type="text" name="toLocation"></span>
+          <span><input type="text" name="toLocation" value="Kits Beach"></span>
           <br>
-          <input type="submit" value="Submit">
+          <input id="submit" type="submit" value="Submit">
         </form>
     </div>
     <div id = "navbar">
@@ -26,7 +35,6 @@
       </ul>
     </div>
     <div id = "options">
-      Transport Options
     </div>
   </div>
 </body>

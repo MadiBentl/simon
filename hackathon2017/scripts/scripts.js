@@ -12,8 +12,8 @@ $(document).ready(function(){
   }
   //var displayFilter = function(){
     var filter = "Top Recommendations";
-    $("#top-info")
-    .append("<div class='activeFilter'>"+ filter +"</div>");
+    $("#navbar")
+    .append("<div class='activeFilter'><p>"+ filter +"</p></div>");
 //  }
   var displayOptions = function(){
     for (var x = 0; x < dataLength; x++){
