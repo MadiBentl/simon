@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
   font-size: 1.05em;
-  font-style: sans-serif; }
+  font-style: sans-serif;
+  box-shadow: none;
+  outline: none;
+  border: none; }
 
 button {
   border-radius: 0;
