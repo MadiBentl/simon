@@ -37,7 +37,7 @@ var createOptions = function(){
     $("#car-options").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
     $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
                     .append("<div class='fltlft' id='fltleft" + x + "''></div>");
-    $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 Moto > \uD83D\uDEB6</h3>")
+    $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 " + data[x]["name"] + " > \uD83D\uDEB6</h3>")
     .append("</br>")
     .append("Most Peaceful");
     $("#fltleft" + x).append("<p>35 min</p>")
@@ -45,16 +45,16 @@ var createOptions = function(){
 
   }
 }
-var data = {
-  "evo": {
-    "name": "Evo",
+var data = [
+  {
+    name: "Evo",
     "type": "Car Sharing",
     "time": "26 min;",
     "cost": "$6-10",
     "available": "true",
     "badge": "Lowest Cost"
   },
-  "Uber": {
+  {
     "name": "Uber",
     "typ": "Car Sharing",
     "time": "20 min",
@@ -62,7 +62,7 @@ var data = {
     "available": "true",
     "badge": "Shortest Walk"
   },
-  "Mobi": {
+  {
     "name": "Mobi",
     "type": "Bike Sharing",
     "time": "35 min",
@@ -70,4 +70,4 @@ var data = {
     "available": "true",
     "badge": "Most Peaceful"
   }
-}
+]
