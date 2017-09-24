@@ -46,7 +46,7 @@ var displayCarSharing = function(){
     if (data[x]["type"] == "Car Sharing"){
       $("#carSharing").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
       $("#option" + x).append("<div class='fltright' id='fltright" + x +"'></div>")
-                      .append("<div class='fltlft' id='fltleft" + x + "''></div>");
+                      .append("<div style='margin-right: 30px;' class='fltlft' id='fltleft" + x + "''></div>");
       $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 " + data[x]["name"] + " > \uD83D\uDEB6</h3>")
       .append("</br>")
       .append(data[x]["badge"]);
@@ -55,6 +55,10 @@ var displayCarSharing = function(){
     }
 
   }
+}
+var goBack = function(){
+  $("#map-page").addClass("hidden");
+  $("#carSharing").removeClass("hidden");
 }
 var createOptions = function(){
   $("#options").html(" ");
