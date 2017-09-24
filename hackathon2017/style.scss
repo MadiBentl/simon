@@ -2,6 +2,7 @@ $mediumGreen: #92da49;
 $highlightGreen: #b8e686;
 $textColour: white;
 $textGreen: #446a1d;
+$buttonColour: #fc5608;
 *{
   box-sizing: border-box;
   font-size: 1.05em;
@@ -109,6 +110,14 @@ li{
 .wrap{
   text-align: center;
   font-size:0.8em;
+}
+#book{
+  background-color: white;
+  height: 100px;
+}
+#bookbtn{
+  padding: 15px;
+  background-color: $buttonColour;
 }
 .left{
     float: left;

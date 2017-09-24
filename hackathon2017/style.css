@@ -100,6 +100,14 @@ li {
   text-align: center;
   font-size: 0.8em; }
 
+#book {
+  background-color: white;
+  height: 100px; }
+
+#bookbtn {
+  padding: 15px;
+  background-color: #fc5608; }
+
 .left {
   float: left; }
 
