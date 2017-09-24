@@ -57,8 +57,12 @@ var displayCarSharing = function(){
   }
 }
 var goBack = function(){
+  $("#content").removeClass("hidden");
+  $("#activeFilter").removeClass("hidden");
+  $("#carSharing").html("");
+  $("#car-options").removeClass("hidden");
+  $("#options").removeClass("hidden");
   $("#map-page").addClass("hidden");
-  $("#carSharing").removeClass("hidden");
 }
 var createOptions = function(){
   $("#options").html(" ");
