@@ -44,8 +44,12 @@ form {
 #location-icon {
   width: 20px; }
 
-#container, #top-info {
-  width: 676px;
+#container {
+  width: 675px;
+  margin: auto; }
+
+#top-info {
+  width: 100%;
   margin: auto; }
 
 input[type="text"] {
