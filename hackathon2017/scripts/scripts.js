@@ -39,9 +39,9 @@ var createOptions = function(){
                     .append("<div class='fltlft' id='fltleft" + x + "''></div>");
     $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 " + data[x]["name"] + " > \uD83D\uDEB6</h3>")
     .append("</br>")
-    .append("Most Peaceful");
-    $("#fltleft" + x).append("<p>35 min</p>")
-                     .append("<p>$7-10</p>")
+    .append(data[x]["badge"]);
+    $("#fltleft" + x).append("<h4>"+ data[x]["time"] +"</h4>")
+                     .append("<p>" + data[x]['cost'] + "</p>")
 
   }
 }
@@ -49,7 +49,7 @@ var data = [
   {
     name: "Evo",
     "type": "Car Sharing",
-    "time": "26 min;",
+    "time": "26 min",
     "cost": "$6-10",
     "available": "true",
     "badge": "Lowest Cost"
