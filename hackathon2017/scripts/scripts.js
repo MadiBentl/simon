@@ -56,7 +56,9 @@ var displayCarSharing = function(){
   }
 }
 var createOptions = function(){
-  $("#option").html(" ");
+  $("#options").html(" ");
+  $("#carSharing").html("");
+  $("#car-options").html("");
   for (var x = 0; x< dataLength; x++){
     if (data[x]["available"]){
       $("#car-options").append("<div onClick='showmap()' class='option' id='option" + x +"'>");
