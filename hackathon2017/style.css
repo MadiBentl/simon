@@ -55,7 +55,7 @@ input[type="text"] {
 
 #container {
   border: 3px solid grey;
-  height: 1100px; }
+  height: 900px; }
 
 #top-info {
   height: 200px;
@@ -85,7 +85,7 @@ input[type="text"] {
   background-image: url(images/map-pic.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 850px;
   position: relative; }
 
 .option {
