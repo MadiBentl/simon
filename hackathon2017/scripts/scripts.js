@@ -31,6 +31,7 @@ var showmap = function(){
   console.log("show map");
   $("#content").addClass("hidden");
   $("#activeFilter").addClass("hidden");
+  $("#carSharing").html("");
   $("#car-options").addClass("hidden");
   $("#options").addClass("hidden");
   $("#map-page").removeClass("hidden");
