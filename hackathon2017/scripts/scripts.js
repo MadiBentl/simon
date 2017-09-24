@@ -31,7 +31,8 @@ var createOptions = function(){
     $("#fltright" + x).append("<h3> \uD83D\uDEB6 > \uD83D\uDE97 Moto > \uD83D\uDEB6</h3>")
     .append("</br>")
     .append("Most Peaceful");
-    $("#fltleft" + x).append("<p>Cost: $20</p>")
-                    .append("<p> 5 minutes</p>");
+    $("#fltleft" + x).append("<p>35 min</p>")
+                     .append("<p>$7-10</p>")
+
   }
 }
