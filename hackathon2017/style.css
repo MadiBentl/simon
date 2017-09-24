@@ -14,11 +14,8 @@ form {
   padding-top: 20px; }
   form span input {
     width: 80%;
-    float: right;
-    margin: auto; }
-
-#submit {
-  float: right; }
+    margin: auto;
+    height: 40px; }
 
 .activeFilter {
   height: 30px;
