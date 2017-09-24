@@ -19,6 +19,7 @@ $(document).ready(function(){
 var displayOptions = function(){
 //  $(document).ready(function(){
     if (addressEntered){
+      $("#address-options").addClass("hidden");
       $("#car-options").removeClass("hidden");
     }
   //});
